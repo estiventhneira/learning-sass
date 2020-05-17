@@ -1,0 +1,17 @@
+.more__background {
+  background-color: var(--lightGrayishBlue);
+}
+
+.more__container {
+  @extend %wrapper;
+}
+
+.more__title {
+  @extend %title;
+  font-size: 1.9em;
+}
+
+.more__p {
+  @extend %p;
+  font-size: 0.75em;
+}

@@ -1,0 +1,28 @@
+.blog__container {
+  @extend %wrapper;
+}
+
+.blog__title {
+  @extend %title;
+  margin-top: 1.3em;
+  margin-bottom: 1em;
+}
+
+.article__img--container {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.article__info {
+  padding: 20px;
+  text-align: left;
+  @extend %p;
+}
+
+.article__title {
+  @extend %title;
+  font-size: 1.3em;
+  font-weight: 400;
+}
