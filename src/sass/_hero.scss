@@ -7,6 +7,9 @@
   height: 300px;
   width: 100%;
   display: flex;
+  @media screen and (max-width: 540px) {
+    background-position: center bottom;
+  }
 }
 
 .hero__info {

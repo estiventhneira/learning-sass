@@ -84,6 +84,11 @@ header .logo__container {
   width: 100%;
   display: flex;
 }
+@media screen and (max-width: 540px) {
+  .hero__img {
+    background-position: center bottom;
+  }
+}
 
 .more__background {
   background-color: var(--lightGrayishBlue);
