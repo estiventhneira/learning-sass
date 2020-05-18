@@ -28,7 +28,7 @@ img {
   max-width: 100%;
 }
 
-.article__title, .blog__title, .more__title, .info__title {
+.article__title, .blog__title, .more__title, .more__title--principal, .info__title {
   margin: 0.5em 0;
   font-size: 2em;
   font-weight: 400;
@@ -54,21 +54,47 @@ img {
   color: var(--white);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9em 1.5em;
+}
+header .logo__container {
+  display: flex;
+}
+
+.menu-hamburguesa {
+  width: 30px;
+  height: 20px;
+  background-image: url("../../src/assets/images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.menu-hamburguesa .is-hidden {
+  display: none;
+}
+
 .hero__img {
   background-image: url("../../src/assets/images/image-mockups.png"), url("../../src/assets/images/bg-intro-mobile.svg");
   background-size: 345px, cover;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 375px;
+  width: 100%;
+  display: flex;
 }
 
 .more__background {
   background-color: var(--lightGrayishBlue);
 }
 
+.more__title--principal {
+  font-size: 1.7em;
+}
+
 .more__title {
-  font-size: 1.9em;
+  font-size: 1.3em;
 }
 
 .more__p {
@@ -76,15 +102,18 @@ img {
 }
 
 .blog__title {
-  margin-top: 1.3em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
 .article__img--container {
+  overflow: hidden;
+  object-fit: cover;
+  max-height: 200px;
+}
+.article__img--container img {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
-  overflow: hidden;
-  max-height: 200px;
 }
 
 .article__info {
@@ -95,6 +124,32 @@ img {
 .article__title {
   font-size: 1.3em;
   font-weight: 400;
+}
+
+footer {
+  background-color: var(--darkBlue);
+  text-align: center;
+  color: var(--white);
+}
+footer .logo__container svg {
+  margin-top: 1em;
+}
+footer ul,
+footer li {
+  margin: 10px auto;
+  padding: 0;
+  list-style: none;
+}
+footer .buttom__invite {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.rrss__container {
+  margin: 15px auto;
+}
+.rrss__container a {
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

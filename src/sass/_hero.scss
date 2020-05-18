@@ -2,10 +2,11 @@
   background-image: url("../../src/assets/images/image-mockups.png"),
     url("../../src/assets/images/bg-intro-mobile.svg");
   background-size: 345px, cover;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 375px;
+  width: 100%;
+  display: flex;
 }
 
 .hero__info {

@@ -6,9 +6,14 @@
   @extend %wrapper;
 }
 
+.more__title--principal {
+  @extend %title;
+  font-size: 1.7em;
+}
+
 .more__title {
   @extend %title;
-  font-size: 1.9em;
+  font-size: 1.3em;
 }
 
 .more__p {

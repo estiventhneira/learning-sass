@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9em 1.5em;
+
+  .logo__container {
+    display: flex;
+  }
+}
+
+.menu-hamburguesa {
+  width: 30px;
+  height: 20px;
+  background-image: url("../../src/assets/images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  .is-hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--darkBlue);
+  text-align: center;
+  color: var(--white);
+
+  .logo__container svg {
+    margin-top: 1em;
+  }
+
+  ul,
+  li {
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .buttom__invite {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.rrss__container {
+  margin: 15px auto;
+  a {
+    margin: 0 10px;
+  }
+}
