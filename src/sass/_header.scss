@@ -1,4 +1,5 @@
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +17,39 @@ header {
   }
   .is-hidden {
     display: none;
+  }
+  .is-hidden-menu {
+    display: none;
+  }
+  .check {
+    &:checked {
+      ~ .menu-hamburguesa {
+        background-image: url("../../src/assets/images/icon-close.svg");
+      }
+      ~ .navegacion {
+        font-size: 1.2em;
+        padding: 1em;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: linear-gradient(
+          to bottom,
+          var(--darkBlue) 0%,
+          transparent 90%
+        );
+
+        li {
+          color: var(--grayishBlue);
+          padding: 1em;
+          display: block;
+          text-align: center;
+          background-color: white;
+        }
+      }
+    }
   }
 }
 

@@ -55,6 +55,7 @@ img {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +73,30 @@ header .menu-hamburguesa {
 }
 header .is-hidden {
   display: none;
+}
+header .is-hidden-menu {
+  display: none;
+}
+header .check:checked ~ .menu-hamburguesa {
+  background-image: url("../../src/assets/images/icon-close.svg");
+}
+header .check:checked ~ .navegacion {
+  font-size: 1.2em;
+  padding: 1em;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+}
+header .check:checked ~ .navegacion li {
+  color: var(--grayishBlue);
+  padding: 1em;
+  display: block;
+  text-align: center;
+  background-color: white;
 }
 
 @media screen and (min-width: 920px) {
@@ -136,10 +161,10 @@ header .is-hidden {
   .hero__img2 {
     position: absolute;
     background-image: url("../../src/assets/images/image-mockups.png");
-    background-size: 450px 530px;
+    background-size: 450px 560px;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 420px;
     width: 50%;
     display: flex;
     right: 0;
