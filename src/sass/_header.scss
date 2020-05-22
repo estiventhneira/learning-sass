@@ -7,15 +7,48 @@ header {
   .logo__container {
     display: flex;
   }
-}
-
-.menu-hamburguesa {
-  width: 30px;
-  height: 20px;
-  background-image: url("../../src/assets/images/icon-hamburger.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  .menu-hamburguesa {
+    width: 30px;
+    height: 20px;
+    background-image: url("../../src/assets/images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
   .is-hidden {
     display: none;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  header {
+    .menu-hamburguesa {
+      display: none;
+    }
+    .is-hidden {
+      display: initial;
+    }
+    .navegacion {
+      display: flex;
+      list-style: none;
+      li {
+        padding: 0 20px;
+        color: var(--grayishBlue);
+      }
+    }
+    .buttom__invite-header {
+      padding: 1em 3em;
+      background-image: linear-gradient(
+        to right,
+        var(--limeGreen) 0%,
+        var(--brightCyan) 100%
+      );
+      border: none;
+      border-radius: 25px;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: var(--white);
+      }
+    }
   }
 }

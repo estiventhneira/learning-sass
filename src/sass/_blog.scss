@@ -6,6 +6,7 @@
   @extend %title;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .article__img--container {
@@ -28,4 +29,20 @@
   @extend %title;
   font-size: 1.3em;
   font-weight: 400;
+}
+
+@media screen and (min-width: 920px) {
+  .blog__title {
+    padding-bottom: 0;
+  }
+
+  .articles__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .card__container {
+    padding: 20px;
+  }
 }

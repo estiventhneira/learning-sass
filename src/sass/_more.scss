@@ -2,6 +2,10 @@
   background-color: var(--lightGrayishBlue);
 }
 
+.more__info {
+  text-align: center;
+}
+
 .more__container {
   @extend %wrapper;
 }
@@ -19,4 +23,22 @@
 .more__p {
   @extend %p;
   font-size: 0.75em;
+}
+
+@media screen and (min-width: 920px) {
+  .more__info {
+    text-align: left;
+    padding: 20px 60px;
+  }
+
+  .more__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-top: 0;
+  }
+
+  .more__card {
+    padding: 20px;
+  }
 }
